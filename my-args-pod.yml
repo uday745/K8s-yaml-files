@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: my-args-pod
+   labels:
+      app: myapp-4
+spec:
+   containers:
+   - name: myapp-container
+     image: busybox
+     command: ['echo']
+     args: ["Hello uday"]
+   restartPolicy: Never
