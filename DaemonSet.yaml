@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: nginx-deployment
+spec:
+  selector:
+    matchLabels: 
+      demoType: nginx-deployment-demo
+  template:
+    metadata:
+      labels:
+        demoType: nginx-deployment-demo
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
