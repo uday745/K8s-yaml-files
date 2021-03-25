@@ -1,0 +1,11 @@
+********************************
+SERVICE ACCOUNT: Add the users
+************************************
+# kubectl get sa uday -o yaml
+# kubectl get secret uday-token-255q2 -o yaml
+# kubectl get secret uday-token-255q2 -o jsonpath={.data.token}
+# token=$(kubectl get secret uday-token-255q2 -o jsonpath={.data.token} | base64 --code
+# echo $token
+# kubectl config set-credentials uday1 --token=$token
+# kubectl config set-context new-context --cluster=kubernetes --user=admin
+*****************************************************************************

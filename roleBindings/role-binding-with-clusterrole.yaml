@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+Kind: RoleBinding
+metadata:
+  name: user-get-pods
+subjects:
+- kind: User
+  name: uday1
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: list-ds
+  apiGroup: rbac.authorization.k8s.io

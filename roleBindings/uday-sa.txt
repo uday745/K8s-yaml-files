@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  creationTimestamp: "2021-03-25T05:50:50Z"
+  name: uday
+  namespace: default
+  resourceVersion: "94721"
+  uid: 1a01d2af-b2e3-455b-b66c-5152f54df21f
+secrets:
+- name: uday-token-255q2
